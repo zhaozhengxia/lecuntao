@@ -4,7 +4,10 @@
 		<meta charset="utf-8">
 		<title>首页</title>
 		<link rel="stylesheet" type="text/css" href="../css/index.css" />
-        <script src="../js/jquery-1.8.3.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css" />
+        <script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="../js/swiper.min.js"></script>
+        <script type="text/javascript" src="../js/index.js"></script>
 	</head>
 	<body>
 		<div class="top">
@@ -182,6 +185,8 @@
 					</li>
                </ul>
             </div>
+				</ul>
+			</div>
 		</div>
 		<!-- 头部 -->
 		<div class="header">
@@ -270,31 +275,634 @@
 					<li><a href="#">消费扶贫</a></li>   
 					<li><a href="#">广东优品</a></li>   
 				</ul>
-				
+				<dl class="nav-pt">
+					<dt>
+						<a href="#">
+						<i class="icon-all"></i>
+						全部商品分类</a>
+					</dt>
+					<dd>
+						<a href="#" class="class_t">
+							<span class="icon"><b class="gopng-1"></b></span>
+							农产品
+							<span class="icon-arrow"></span>
+						</a>
+						<div class="snav_c" style="width: 109px;top: 0px;">
+							<dl>
+								<dt><a href="#">干货</a></dt>
+								<dt><a href="#">蔬菜</a></dt>
+								<dt><a href="#">水果</a></dt>
+								<dt><a href="#">副食</a></dt>
+								<dt><a href="#">其他</a></dt>
+							</dl>
+						</div>
+					</dd>
+					<dd>
+						<a href="#" class="class_t">
+							<span class="icon"><b class="gopng-2"></b></span>
+							农用物资
+							<span class="icon-arrow"></span>
+						</a>
+						<div class="snav_c" style="width: 109px;top: -45px;">
+							<dl>
+								<dt><a href="#">农业化肥</a></dt>
+								<dt><a href="#">农机</a></dt>
+								<dt><a href="#">农药</a></dt>
+							</dl>
+						</div>
+					</dd>
+					<dd>
+						<a href="#" class="class_t">
+							<span class="icon"><b class="gopng-3"></b></span>
+							通讯/办公
+							<span class="icon-arrow"></span>
+						</a>
+						<div class="snav_c" style="width: 109px;top: -90px;">
+							<dl>
+								<dt><a href="#">手机通讯</a></dt>
+								<dt><a href="#">手机配件</a></dt>
+								<dt><a href="#">外设产品</a></dt>
+								<dt><a href="#">办公用品</a></dt>
+								<dt><a href="#">网络产品</a></dt>
+							</dl>
+						</div>
+					</dd>
+					<dd>
+						<a href="#" class="class_t">
+							<span class="icon"><b class="gopng-4"></b></span>
+							个护/化妆
+							<span class="icon-arrow"></span>
+						</a>
+						<div class="snav_c" style="width: 109px;top: -135px;">
+							<dl>
+								<dt><a href="#">面部护肤</a></dt>
+								<dt><a href="#">洗发护发</a></dt>
+								<dt><a href="#">身体护肤</a></dt>
+								<dt><a href="#">口腔护理</a></dt>
+								<dt><a href="#">女性护理</a></dt>
+								<dt><a href="#">香水彩妆</a></dt>
+							</dl>
+						</div>
+					</dd>
+					<dd>
+						<a href="#" class="class_t">
+							<span class="icon"><b class="gopng-5"></b></span>
+							家居/建材
+							<span class="icon-arrow"></span>
+						</a>
+						<div class="snav_c" style="width: 109px;top: -180px;">
+							<dl>
+								<dt><a href="#">餐饮厨具</a></dt>
+								<dt><a href="#">居家日用</a></dt>
+								<dt><a href="#">收纳整理</a></dt>
+								<dt><a href="#">家具灯具</a></dt>
+								<dt><a href="#">洗护清洁</a></dt>
+								<dt><a href="#">家装软饰</a></dt>
+								<dt><a href="#">家纺</a></dt>
+							</dl>
+						</div>
+					</dd>
+					<dd>
+						<a href="#" class="class_t">
+							<span class="icon"><b class="gopng-6"></b></span>
+							服装/饰品
+							<span class="icon-arrow"></span>
+						</a>
+						<div class="snav_c" style="width: 109px;top: -225px;">
+							<dl>
+								<dt><a href="#">女装系列</a></dt>
+								<dt><a href="#">男装系列</a></dt>
+								<dt><a href="#">内衣系列</a></dt>
+								<dt><a href="#">服饰配件</a></dt>
+								<dt><a href="#">珠宝首饰</a></dt>
+								<dt><a href="#">礼品</a></dt>
+								<dt><a href="#">钟表</a></dt>
+								<dt><a href="#">服装店用具</a></dt>
+							</dl>
+						</div>
+					</dd>
+					<dd>
+						<a href="#" class="class_t">
+							<span class="icon"><b class="gopng-7"></b></span>
+							鞋帽/箱包
+							<span class="icon-arrow"></span>
+						</a>
+						<div class="snav_c" style="width: 109px;top: -270px;">
+							<dl>
+								<dt><a href="#">流行男鞋</a></dt>
+								<dt><a href="#">精品男包</a></dt>
+								<dt><a href="#">休闲鞋类</a></dt>
+								<dt><a href="#">帽子</a></dt>
+							</dl>
+						</div>
+					</dd>
+					<dd>
+						<a href="#" class="class_t">
+							<span class="icon"><b class="gopng-8"></b></span>
+							母婴/玩具
+							<span class="icon-arrow"></span>
+						</a>
+						<div class="snav_c" style="width: 109px;top: -315px;">
+							<dl>
+								<dt><a href="#">尿裤湿巾</a></dt>
+								<dt><a href="#">喂养用品</a></dt>
+								<dt><a href="#">洗护用品</a></dt>
+								<dt><a href="#">童装童鞋</a></dt>
+								<dt><a href="#">妈妈专区</a></dt>
+								<dt><a href="#">玩具乐器</a></dt>
+							</dl>
+						</div>
+					</dd>
+					<dd>
+						<a href="#" class="class_t">
+							<span class="icon"><b class="gopng-9"></b></span>
+							旅游/房产
+							<span class="icon-arrow"></span>
+						</a>
+						<div class="snav_c" style="width: 109px;top: -360px;">
+							<dl>
+								<dt><a href="#">旅游团购</a></dt>
+							</dl>
+						</div>
+					</dd>
+					<dd>
+						<a href="#" class="class_t">
+							<span class="icon"><b class="gopng-10"></b></span>
+							生活服务
+							<span class="icon-arrow"></span>
+						</a>
+						<div class="snav_c" style="width: 109px;top: -405px;">
+							<dl>
+								<dt><a href="#">农业</a></dt>
+								<dt><a href="#">数字音乐</a></dt>
+								<dt><a href="#">文艺</a></dt>
+								<dt><a href="#">经管励志</a></dt>
+								<dt><a href="#">生活</a></dt>
+								<dt><a href="#">科技</a></dt>
+								<dt><a href="#">少儿</a></dt>
+								<dt><a href="#">教育</a></dt>
+								<dt><a href="#">手工艺品</a></dt>
+								<dt><a href="#">人文社科</a></dt>
+								<dt><a href="#">宠物</a></dt>
+							</dl>
+						</div>
+					</dd>
+					
+				</dl>
 			</div>	
 		</div>
+		<!-- 轮播图 -->
+		<div id="bannerBar" class="bannerBar">
+			<div class="banner">
+				<div class="swiper-container">
+					<div class="swiper-wrap">
+						<div class="swiper-slide">
+							<a href="#" target="_blank"><img src="../img/banner01.jpg" title="TCL" alt="TCL"/></a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" target="_blank"><img src="../img/banner02.jpg" title="草珊瑚" alt="草珊瑚"/></a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" target="_blank"><img src="../img/banner03.jpg" title="呵护生活" alt="呵护生活"/></a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" target="_blank"><img src="../img/banner04.jpg" title="米面粮油" alt="米面粮油"/></a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" target="_blank"><img src="../img/banner05.jpg" title="舌尖上的美味" alt="舌尖上的美味"/></a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" target="_blank"><img src="../img/banner06.jpg" title="舌尖上的美味" alt="舌尖上的美味"/></a>
+						</div>
+					</div>
+					<div class="swiper-pagination" style="bottom: 10px;left: 295px;">
+						<span class="swiper-pagination-bullet"></span>
+						<span class="swiper-pagination-bullet"></span>
+						<span class="swiper-pagination-bullet"></span>
+						<span class="swiper-pagination-bullet"></span>
+						<span class="swiper-pagination-bullet"></span>
+						<span class="swiper-pagination-bullet"></span>
+					</div>
+				</div>
+			</div>
+			<div class="bnews">
+				<div class="bnews_c" style="margin-bottom: 10px; height: 120px;">
+					<dl class="mebrinfo">
+						<dt><img src="../images/hi.jpg"/></dt>
+						<dd>
+							<h2>HI~你好！</h2>
+							<h3>欢迎来到乐村淘</h3>
+						</dd>
+					</dl>
+					<p class="log_c">
+						<a href="#" class="logbtn">登录</a>
+						<a href="#" class="regbtn">注册</a>
+					</p>
+				</div>
+				<div class="bnews_c" style="margin-bottom: 10px; height: 205px;">
+					<div class="news_t">
+						<h2><a href="#">乐村淘资讯</a></h2>
+						<h3><a href="#">更多<i></i></a></h3>
+					</div>
+					<div class="newslst">
+						<li>
+							<a href="#" target="_blank" title="网站升级公告"><span>[公告]</span>网站升级公告...</a>
+						</li>
+						<li>
+							<a href="#" target="_blank" title="乐村淘与山西农谷、太谷县人民政府签订战略合作协议"><span>[公告]</span>乐村淘与山西农谷、...</a>
+						</li>
+						<li>
+							<a href="#" target="_blank" title="”一双筷子、一块毛巾”健康生活理念公益互助项目在我省启动"><span>[公告]</span>”一双筷子、一块毛...</a>
+						</li>
+						<li>
+							<a href="#" target="_blank" title="乐村淘4周年庆好货大集"><span>[公告]</span>乐村淘4周年庆好货...</a>
+						</li>
+						<li>
+							<a href="#" target="_blank" title="乐村淘4乐村淘4周年庆淘货必读攻略！"><span>[公告]</span>乐村淘4周年庆淘货...</a>
+						</li>
+					</div>
+				</div>
+				<ul class="lesrv">
+					<li>
+						<a href="#" class="ico_cz" title="生活缴费" target="" onclick="recharge_hua_fei()">充值</a>
+					</li>
+					<li>
+						<a href="#" class="ico_cx" title="金融交易" target="">贷款</a>
+					</li>
+					<li>
+						<a href="#" class="ico_game" title="即将上线,敬请期待" target="" >车险</a>
+					</li>
+					<li>
+						<a href="#" class="ico_ly" title="即将上线,敬请期待" target="" >旅游</a>
+					</li>
+					<li>
+						<a href="#" class="ico_ycp" title="即将上线,敬请期待" target="">演出票</a>
+					</li>
+					<li>
+						<a href="#" class="ico_dyp" title="即将上线,敬请期待" target="">电影票</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 列表 -->
+		<div class="lct_floor lazy_floor_0" id="one">
+			<div class="tsg_l">
+				<div class="tsg_m">
+					<p class="tsg_font">
+						<img src="../img/tsg_logo.png" />
+					</p>
+					<dl class="tsg_ml">
+						<dt><i></i><a href="#" title="" target="_blank">蓝田县</a>|</dt>
+						<dd>
+							<a href="#" title="蓝田县"><img src="../img/list01.jpg" /></a>
+						</dd>
+					</dl>
+					<div class="tsg_mr tsg_container">
+						<ul class="tsg_mr_t tsg_tit">
+							<li class="tsg_rth">
+								<h3>商品推荐</h3>
+							</li>
+						</ul>
+						<span class="bod_r_n"><a href="#" target="_blank">全部特色馆</a></span>
+						<div class="tsg_main">
+							<div class="tsg_content FengTabCon_0">
+								<ul class="tsg_sc">
+									<li>
+										<div class="tsg_tag">
+											<img src="../img/tsg_tag.png" />
+										</div>
+										<h2><a href="#" target="_blank" title="【特色馆】 黑坛谢村花雕黄酒（4瓶/箱）32元 1箱4瓶 单瓶付邮费 陕西汉中洋县">【特色馆】 黑坛谢村</a></h2>
+										<h3></h3>
+										<h4><span>￥</span>128.00</h4>
+										<a class="buy_btn" href="#" target="_blank">立即采购</a>
+										<a href="#" target="_blank"><img src="../img/list02.jpg" title="【特色馆】 黑坛谢村花雕黄酒（4瓶/箱）32元 1箱4瓶 单瓶付邮费 陕西汉中洋县" alt="【特色馆】 黑坛谢村花雕黄酒（4瓶/箱）32元 1箱4瓶 单瓶付邮费 陕西汉中洋县" /></a>
+									</li>
+									<li>
+										<div class="tsg_tag">
+											<img src="../img/tsg_tag.png" />
+										</div>
+										<h2><a href="#" target="_blank" title="【特色馆】大荔特产 杨大 纯手工无添加剂 五香味烤花馍干（非油炸）285g/袋*20袋/箱">【特色馆】大荔特产</a></h2>
+										<h3></h3>
+										<h4><span>￥</span>156.00</h4>
+										<a class="buy_btn" href="#" target="_blank">立即采购</a>
+										<a href="#" target="_blank"><img src="../img/list03.jpg" title="【【特色馆】大荔特产 杨大 纯手工无添加剂 五香味烤花馍干（非油炸）285g/袋*20袋/箱" alt="【特色馆】大荔特产 杨大 纯手工无添加剂 五香味烤花馍干（非油炸）285g/袋*20袋/箱" /></a>
+									</li>
+								</ul>
+								<ul class="tsg_slidersc">
+									<li>
+										<div class="tsg_tag">
+											<img src="../img/tsg_tag.png" />
+										</div>
+										<a href="#" class="th2" target="_blank">
+											<img src="../img/list04.jpg"  alttitle="【特色馆】黄土情桶装绿豆500g 2桶起订每桶21元 陕西延安" alt="【特色馆】黄土情桶装绿豆500g 2桶起订每桶21元 陕西延安" />
+										</a>
+										<h2><a href="#" target="_blank" title="【特色馆】黄土情桶装绿豆500g 2桶起订每桶21元 陕西延安">【特色馆】黄土情桶装绿豆500</a></h2>
+										<h3></h3>
+										<h4><span>￥</span>42.00</h4>
+										<a class="buy_btn" href="#" target="_blank">立即采购</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="tsg_ul">
+							<div class="right-side-focus">
+								<ul style="left: 0;width: 240px;">
+									<li>
+										<a href="#" title="周至" target="_blank">
+											<<img src="../img/list05.jpg" >
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tsg_classfiy">
+					<ul>
+						<li class="fore1">
+							<a href="#" target="_blank" title="华阴市">华阴市</a>
+						</li>
+						<li class="">
+							<a href="#" target="_blank" title="宝塔区">宝塔区</a>
+						</li>
+						<li class="">
+							<a href="#" target="_blank" title="西乡县">西乡县</a>
+						</li>
+						<li class="">
+							<a href="#" target="_blank" title="大荔县">大荔县</a>
+						</li>
+						<li class="">
+							<a href="#" target="_blank" title="洋县">洋县</a>
+						</li>
+						<li class="">
+							<a href="#" target="_blank" title="凤翔县">凤翔县</a>
+						</li>
+						<li class="">
+							<a href="#" target="_blank" title="周至县">周至县</a>
+						</li>
+						<li class="">
+							<a href="#" target="_blank" title="白河县">白河县</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 商品列表 -->
+		<div class="lct_floor lazy_floor_1" id="lct_floor_234">
+			<div class="flr_c floor">	
+				<div class="flr_tit">
+					<h2 class="floor_h2"><i class="floor_nums floor_num_234">2F</i>居家日用</h2>
+					<h3></h3>
+				</div>
+				<div class="spyl_b style_green"></div>
+				<dl class="flr_h">
+					<dt>
+						<a href="#" target="_blank" title="居家日用"><img src="../img/product_tit01.jpg"/></a>
+					</dt>
+					<dd class="jjshbc style_green">
+						<ul class="flr_hu">
+							<li>
+								<a href="#" target="_blank"><span>洗护清洁</span></a>
+								<a href="#" target="_blank">洗衣粉</a>
+								<a href="#" target="_blank">洗洁精</a>
+								<a href="#" target="_blank">香皂</a>
+							</li>
+							<li>
+								<a href="#" target="_blank"><span>净化除味</span></a>
+								<a href="#" target="_blank">空气清新</a>
+								<a href="#" target="_blank">杀虫除虫</a>
+								<a href="#" target="_blank">蚊香</a>
+							</li>
+							<li>
+								<a href="#" target="_blank"><span>生活日化</span></a>
+								<a href="#" target="_blank">卫生纸</a>
+								<a href="#" target="_blank">毛巾</a>
+								<a href="#" target="_blank">水杯</a>
+							</li>
+							<li>
+								<a href="#" target="_blank"><span>收纳整理</span></a>
+								<a href="#" target="_blank">家具灯具</a>
+								<a href="#" target="_blank">餐具厨具</a>
+								<a href="#" target="_blank">家装软饰</a>
+							</li>
+						</ul>
+					</dd>
+				</dl>
+				<ul class="flr_ua">
+					<li>
+						<a href="#" target="_blank">
+							<h3 title="亿洁牌多功能玻璃清洁器YJ002（25个/件） 15">亿洁牌多功能玻璃清洁器YJ00</h3>
+							<span></span>
+							<div class="flr_ra_img">
+								<img src="../img/product_item01.jpg" width="100%" />
+							</div>
+							<div class="flr_ua_price">
+								<span class="flr_ua_jg fl">¥375.00</span>
+								<span class="fr"><img src="../img/flr_ua_buy.png"></span>
+							</div>
+						</a>
+					</li>
+						<li>
+						<a href="#" target="_blank">
+							<h3 title="欢乐高档不锈钢清洁球2只装 FJX-8065 (240包/件) 1.5元">欢乐高档不锈钢清洁球2只装 F</h3>
+							<span></span>
+							<div class="flr_ra_img">
+								<img src="../img/product_item02.jpg" width="100%" />
+							</div>
+							<div class="flr_ua_price">
+								<span class="flr_ua_jg fl">¥360.00</span>
+								<span class="fr"><img src="../img/flr_ua_buy.png"></span>
+							</div>
+						</a>
+					</li>
+					</li>
+						<li>
+						<a href="#" target="_blank">
+							<h3 title="欢乐高档不锈钢清洁球2只装 FJX-8065 (240包/件) 1.5元">欢乐高档不锈钢清洁球2只装 F</h3>
+							<span></span>
+							<div class="flr_ra_img">
+								<img src="../img/product_item02.jpg" width="100%" />
+							</div>
+							<div class="flr_ua_price">
+								<span class="flr_ua_jg fl">¥360.00</span>
+								<span class="fr"><img src="../img/flr_ua_buy.png"></span>
+							</div>
+						</a>
+					</li>
+					</li>
+						<li>
+						<a href="#" target="_blank">
+							<h3 title="欢乐高档不锈钢清洁球2只装 FJX-8065 (240包/件) 1.5元">欢乐高档不锈钢清洁球2只装 F</h3>
+							<span></span>
+							<div class="flr_ra_img">
+								<img src="../img/product_item02.jpg" width="100%" />
+							</div>
+							<div class="flr_ua_price">
+								<span class="flr_ua_jg fl">¥360.00</span>
+								<span class="fr"><img src="../img/flr_ua_buy.png"></span>
+							</div>
+						</a>
+					</li>
+					</li>
+						<li>
+						<a href="#" target="_blank">
+							<h3 title="欢乐高档不锈钢清洁球2只装 FJX-8065 (240包/件) 1.5元">欢乐高档不锈钢清洁球2只装 F</h3>
+							<span></span>
+							<div class="flr_ra_img">
+								<img src="../img/product_item02.jpg" width="100%" />
+							</div>
+							<div class="flr_ua_price">
+								<span class="flr_ua_jg fl">¥360.00</span>
+								<span class="fr"><img src="../img/flr_ua_buy.png"></span>
+							</div>
+						</a>
+					</li>
+					</li>
+						<li>
+						<a href="#" target="_blank">
+							<h3 title="欢乐高档不锈钢清洁球2只装 FJX-8065 (240包/件) 1.5元">欢乐高档不锈钢清洁球2只装 F</h3>
+							<span></span>
+							<div class="flr_ra_img">
+								<img src="../img/product_item02.jpg" width="100%" />
+							</div>
+							<div class="flr_ua_price">
+								<span class="flr_ua_jg fl">¥360.00</span>
+								<span class="fr"><img src="../img/flr_ua_buy.png"></span>
+							</div>
+						</a>
+					</li>
+				</ul>	
+			</div>
+		</div>
+		<div class="lct_floor lazy_floor_1" id="lct_floor_234">
+			<div class="flr_c floor">	
+				<div class="flr_tit">
+					<h2 class="floor_h2"><i class="floor_nums floor_num_234">2F</i>居家日用</h2>
+					<h3></h3>
+				</div>
+				<div class="spyl_b style_green"></div>
+				<dl class="flr_h">
+					<dt>
+						<a href="#" target="_blank" title="居家日用"><img src="../img/product_tit01.jpg"/></a>
+					</dt>
+					<dd class="jjshbc style_green">
+						<ul class="flr_hu">
+							<li>
+								<a href="#" target="_blank"><span>洗护清洁</span></a>
+								<a href="#" target="_blank">洗衣粉</a>
+								<a href="#" target="_blank">洗洁精</a>
+								<a href="#" target="_blank">香皂</a>
+							</li>
+							<li>
+								<a href="#" target="_blank"><span>净化除味</span></a>
+								<a href="#" target="_blank">空气清新</a>
+								<a href="#" target="_blank">杀虫除虫</a>
+								<a href="#" target="_blank">蚊香</a>
+							</li>
+							<li>
+								<a href="#" target="_blank"><span>生活日化</span></a>
+								<a href="#" target="_blank">卫生纸</a>
+								<a href="#" target="_blank">毛巾</a>
+								<a href="#" target="_blank">水杯</a>
+							</li>
+							<li>
+								<a href="#" target="_blank"><span>收纳整理</span></a>
+								<a href="#" target="_blank">家具灯具</a>
+								<a href="#" target="_blank">餐具厨具</a>
+								<a href="#" target="_blank">家装软饰</a>
+							</li>
+						</ul>
+					</dd>
+				</dl>
+				<ul class="flr_ua">
+					<li>
+						<a href="#" target="_blank">
+							<h3 title="亿洁牌多功能玻璃清洁器YJ002（25个/件） 15">亿洁牌多功能玻璃清洁器YJ00</h3>
+							<span></span>
+							<div class="flr_ra_img">
+								<img src="../img/product_item01.jpg" width="100%" />
+							</div>
+							<div class="flr_ua_price">
+								<span class="flr_ua_jg fl">¥375.00</span>
+								<span class="fr"><img src="../img/flr_ua_buy.png"></span>
+							</div>
+						</a>
+					</li>
+						<li>
+						<a href="#" target="_blank">
+							<h3 title="欢乐高档不锈钢清洁球2只装 FJX-8065 (240包/件) 1.5元">欢乐高档不锈钢清洁球2只装 F</h3>
+							<span></span>
+							<div class="flr_ra_img">
+								<img src="../img/product_item02.jpg" width="100%" />
+							</div>
+							<div class="flr_ua_price">
+								<span class="flr_ua_jg fl">¥360.00</span>
+								<span class="fr"><img src="../img/flr_ua_buy.png"></span>
+							</div>
+						</a>
+					</li>
+					</li>
+						<li>
+						<a href="#" target="_blank">
+							<h3 title="欢乐高档不锈钢清洁球2只装 FJX-8065 (240包/件) 1.5元">欢乐高档不锈钢清洁球2只装 F</h3>
+							<span></span>
+							<div class="flr_ra_img">
+								<img src="../img/product_item02.jpg" width="100%" />
+							</div>
+							<div class="flr_ua_price">
+								<span class="flr_ua_jg fl">¥360.00</span>
+								<span class="fr"><img src="../img/flr_ua_buy.png"></span>
+							</div>
+						</a>
+					</li>
+					</li>
+						<li>
+						<a href="#" target="_blank">
+							<h3 title="欢乐高档不锈钢清洁球2只装 FJX-8065 (240包/件) 1.5元">欢乐高档不锈钢清洁球2只装 F</h3>
+							<span></span>
+							<div class="flr_ra_img">
+								<img src="../img/product_item02.jpg" width="100%" />
+							</div>
+							<div class="flr_ua_price">
+								<span class="flr_ua_jg fl">¥360.00</span>
+								<span class="fr"><img src="../img/flr_ua_buy.png"></span>
+							</div>
+						</a>
+					</li>
+					</li>
+						<li>
+						<a href="#" target="_blank">
+							<h3 title="欢乐高档不锈钢清洁球2只装 FJX-8065 (240包/件) 1.5元">欢乐高档不锈钢清洁球2只装 F</h3>
+							<span></span>
+							<div class="flr_ra_img">
+								<img src="../img/product_item02.jpg" width="100%" />
+							</div>
+							<div class="flr_ua_price">
+								<span class="flr_ua_jg fl">¥360.00</span>
+								<span class="fr"><img src="../img/flr_ua_buy.png"></span>
+							</div>
+						</a>
+					</li>
+					</li>
+						<li>
+						<a href="#" target="_blank">
+							<h3 title="欢乐高档不锈钢清洁球2只装 FJX-8065 (240包/件) 1.5元">欢乐高档不锈钢清洁球2只装 F</h3>
+							<span></span>
+							<div class="flr_ra_img">
+								<img src="../img/product_item02.jpg" width="100%" />
+							</div>
+							<div class="flr_ua_price">
+								<span class="flr_ua_jg fl">¥360.00</span>
+								<span class="fr"><img src="../img/flr_ua_buy.png"></span>
+							</div>
+						</a>
+					</li>
+				</ul>	
+			</div>
+		</div>
+		<div style="width: 100%;height: 700px;"></div>
 	</body>
 </html>
 <script type="text/javascript">
-    $(document).ready(function(){
-        $(".top_nava").hover(function(e){
-            $(this).children(".dl").stop(true,false).fadeToggle(150);
-            e.preventDefault();
-        });
-		
-		$(".app").hover(function(e){
-		    $(this).children(".app_c").stop(true,false).fadeToggle(150);
-		    e.preventDefault();
-		});
-		
-		$(".sitemap").hover(function(e){
-		    $(this).children(".smapc").stop(true,false).fadeToggle(150);
-		    e.preventDefault();
-		});
-		
-		$(".area > dd").hover(function(){
-			$(".area > dd").children(".area-com").stop(true,false).fadeToggle(150);
-			e.preventDefault();
-		});
-    });
+  
 </script>
