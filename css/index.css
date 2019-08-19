@@ -1,36 +1,5 @@
 @charset "utf-8";
 
-body,p,ul,div,ol,dl,dd,h1,h2,h3,h4,h5,h6,td,input,select,textarea,figure{
-	margin:0;
-	padding:0;
-}
-h1,h2,h3,h4,h5,h6{
-	font-weight: normal;
-	font-size: 12px;
-	font-weight: 400;
-}
-html{
-	display: block;
-}
-body{
-	font-family:"微软雅黑",Arial;
-    background: #ffffff;
-    font-size: 12px;
-}
-
-a{
-	text-decoration: none;
-	color: #333;
-}
-li{
-	list-style:none outside none;
-}
-img{
-	vertical-align: middle;
-}
-i,em{
-	font-style: normal;
-}
 /* 小广告 */
 .top{
     width:100%;

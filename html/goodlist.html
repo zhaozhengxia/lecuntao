@@ -3,9 +3,166 @@
 <head>
 	<title>列表</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="../goodlist.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/goodlist.css"/>
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
 </head>
 <body>
-
+<!-- 小广告 -->
+<div class="public-top-layout w">
+	<div class="topbar wrapper" style="width: 1200px;margin:0 auto;">
+		<!-- 区域 -->
+		<div class="area_b">
+			<div class="area_tit">
+				分站：<span>山西省</span><i></i>
+			</div>
+			<div class="area_con">
+				<div class="item">
+					<a href="#" rel="nofollow" title="天津市">天津市</a>
+				</div>
+				<div class="item">
+					<a href="#" rel="nofollow" title="河北省">河北省</a>
+				</div>
+				<div class="item">
+					<a href="#" rel="nofollow" title="山西省">山西省</a>
+				</div>
+				<div class="item">
+					<a href="#" rel="nofollow" title="内蒙古">内蒙古</a>
+				</div>
+				<div class="item">
+					<a href="#" rel="nofollow" title="辽宁省">辽宁省</a>
+				</div>
+				<div class="item">
+					<a href="#" rel="nofollow" title="吉林省">吉林省</a>
+				</div>
+				<div class="item">
+					<a href="#" rel="nofollow" title="黑龙江">黑龙江</a>
+				</div>
+				<div class="item">
+					<a href="#" rel="nofollow" title="江苏省">江苏省</a>
+				</div>
+				<div class="item">
+					<a href="#" rel="nofollow" title="安徽省">安徽省</a>
+				</div>
+				<div class="item">
+					<a href="#" rel="nofollow" title="江西省">江西省</a>
+				</div>
+				<div class="item">
+					<a href="#" rel="nofollow" title="山东省">山东省</a>
+				</div>
+				<div class="item">
+					<a href="#" rel="nofollow" title="河南省">河南省</a>
+				</div>
+				<div class="item">
+					<a href="#" rel="nofollow" title="湖北省">湖北省</a>
+				</div>
+				<div class="item">
+					<a href="#" rel="nofollow" title="湖南省">湖南省</a>
+				</div>
+				<div class="item">
+					<a href="#" rel="nofollow" title="广东省">广东省</a>
+				</div>
+				<div class="item">
+					<a href="#" rel="nofollow" title="广西">广西</a>
+				</div>
+				<div class="item">
+					<a href="#" rel="nofollow" title="四川省">四川省</a>
+				</div>
+				<div class="item">
+					<a href="#" rel="nofollow" title="云南省">云南省</a>
+				</div>				
+				<div class="item">
+					<a href="#" rel="nofollow" title="陕西省">陕西省</a>
+				</div>
+				<div class="item">
+					<a href="#" rel="nofollow" title="甘肃省">甘肃省</a>
+				</div>
+				<div class="item">
+					<a href="#" rel="nofollow" title="青海省">青海省</a>
+				</div>
+				<div class="item">
+					<a href="#" rel="nofollow" title="新疆">新疆</a>
+				</div>
+			</div>
+		</div>
+		<!-- 用户登录 -->
+		<div class="user-entry">
+			<span class="login">
+					请
+					<a href="javascript:;">登录</a>
+			</span>
+			<span class="">
+				<a href="#">免费注册</a>
+			</span>
+		</div>
+		<!-- 区域 -->
+		<div class="quick-menu">
+			<dl class=""></dl>
+			<dl class="" id="home">
+				<dt class="fc_r">
+					<a href="#" target="_blank" rel="nofollow">我的乐村淘</a>
+				</dt>
+				<dd id="home_list">
+					<ul>
+						<li><a href="#">待付款订单</a></li>
+						<li><a href="#">待确认收货</a></li>
+						<li><a href="#">待评价交易</a></li>
+					</ul>
+				</dd>
+			</dl>
+			<dl class="">
+				<dt class="fc_r">
+					<a href="#" target="_blank" rel="nofollow">
+						购物车<span class="fc_r js_cart_num">0</span>
+					</a>
+					<i class="red"></i>
+				</dt>
+				<dd class="cart_list js_cart_list">
+					<h2>最新加入的商品</h2>
+					<h3><span>共0计件商品</span><span>共计0.00</span><span class="ctlt_buy"><a href="#" style="color: white;">去购物车</a></span></h3>
+				</dd>
+			</dl>
+			<dl class="">
+				<dt class="">
+						客户服务
+						<i></i>
+				</dt>
+				<dd id="home_list">
+					<ul>
+						<li><a href="#">帮助中心</a></li>
+						<li><a href="#">售后服务</a></li>
+						<li><a href="#">客服中心</a></li>
+					</ul>
+				</dd>
+			</dl>
+			<dl class="" id="home">
+				<dt class="">
+						管理后台
+						<i></i>
+				</dt>
+				<dd id="home_list">
+					<ul>
+						<li><a href="#">商家后台</a></li>
+						<li><a href="#">县级管理</a></li>
+						<li><a href="#">省级管理</a></li>
+					</ul>
+				</dd>
+			</dl>
+		</div>
+	</div>
+</div>
 </body>
 </html>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".area_b").hover(function(e){
+		$(this).children().eq(1).stop(true,false).fadeToggle(150);
+		e.preventDefault();
+	});
+
+	$(".quick-menu > dl").hover(function(e){
+		$(this).children("dd").stop(true,false).fadeToggle(150);
+		e.preventDefault();
+	});
+});
+</script>
