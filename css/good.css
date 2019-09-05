@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* 主体 */
+.pr{  position: relative;}
+.wrapper{width:1200px;margin:0 auto;}
+.ncs-detail{width:100%;display: table;margin-bottom: 10px;border:1px solid #EEE;position: relative;z-index:2;height: 500px;}
+/* 商品图片 商品图片 商品图片  商品图片 */
+.ncs-goods-picture{width:367px;background-color: white;position: absolute;z-index: 99;top: 0px;left: 0px;}
+.bigBox{width:360px;height: 360px;position: relative;border:1px solid transparent;background-size: 360px 360px;}
+.box img{width:100%;height: 100%;}
+.mirrorBox{width:180px;height:180px;background: white;position: absolute;top: 0px;left: 0px;opacity: 0.5;display: none;}
+.showBox{width:360px;height: 360px;position: absolute;left: 367px;top: 0px;background: blueviolet;border:1px solid #eee;background-size: 720px 720px;background-repeat: no-repeat;z-index: 999;display: none;}
+.imgList{height: 60px;overflow: hidden;}
+.imgList li{width: 50px;height: 50px;margin: 5px 5px 0px 0px;border:2px solid #EEE;float: left;background-size:50px 50px;}
+/* 商品的信息 商品的信息 商品的信息 */
+.ncs-goods-summary{ width:622px;background: #fafafa;float: left;position: relative;min-height: 460px;margin-left: 367px;box-shadow: inset 4px 0 1px rgba(153,153,153,0.15);border:1px solid #EEE;}
+/* 标题 */
+.name{padding:15px 25px;min-height: 57px;}
+.name h1{font-size: 16px;font-weight: 700;line-height: 21px;color: #333333;    text-overflow: ellipsis; white-space: nowrap;display: block;overflow: hidden;}
+/* 价格和评分 */
+.ncs-meta{padding:10px 0px;position: relative;z-index: 1;box-shadow: inset 4px 0 1px rgba(153,153,153,0.15);}
+.ncs-meta_a{background: url(https://www.lecuntao.com/shop/templates/default/images/msbg.jpg) no-repeat 0 0;height: 65px;}
+/* 评分 */
+.rate{width:100px;position: absolute;right: 10px;top: 20px;text-align: center;}
+.rate a{color: white;}
+.raty img{width:16px;height: 16px;display: inline-block;letter-spacing: normal;word-spacing: normal;}
+/* 价格 */
+.price dt,.price dd{font-size: 12px;line-height: 20px;color: white;display: inline-block;}
+.price dt{width:96px;margin-right: 6px;text-align: right;}
+.price dd{width:510px;}
+.price .now-price{font-size: 20px;font-weight: 600;vertical-align: middle;}
+/* 其他 */
+
+/* 商品的收藏  商品的收藏  商品的收藏 */
+.ncs-handle{width:350px;height: 24px;padding-top: 10px;border-top:dotted 1px #EEE;position: absolute;z-index:1;top:425px;left: 10px;}
+.ncs-handle a{color: #777; background-color: #FFF; float: left;padding: 1px 6px;margin-right: 5px;border: solid 1px #F5F5F5; border-radius: 4px;}
+
+/* 图片详情 图片详情 图片详情 图片详情 */
+.ncs-goods-layout{width:100%;margin-bottom: 10px;position: relative;z-index: 1;overflow: hidden;}
+.ncs-goods-main{width:980px;float: right;}
+
+/* 图片 */
+.ncs-goods-info-content{padding-bottom: 23px;}
+.ncs-goods-info-content img{widows: 980px !important;overflow: hidden;}

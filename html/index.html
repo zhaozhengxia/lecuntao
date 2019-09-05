@@ -5,6 +5,7 @@
 		<title>首页</title>
 		<link rel="stylesheet" type="text/css" href="../css/index.css" />
 		<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+		<link rel="stylesheet" href="../css/common.css">
 		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css" />
         <script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
         <script type="text/javascript" src="../js/swiper.min.js"></script>
@@ -318,7 +319,7 @@
 						</a>
 						<div class="snav_c" style="width: 109px;top: -90px;">
 							<dl>
-								<dt><a href="#">手机通讯</a></dt>
+								<dt><a href="goodlist.html">手机通讯</a></dt>
 								<dt><a href="#">手机配件</a></dt>
 								<dt><a href="#">外设产品</a></dt>
 								<dt><a href="#">办公用品</a></dt>
@@ -1197,7 +1198,7 @@
 					</li>
 				</ul>
 				<div class="myscroll" style="height: 141px;">
-					<ul class="newsbu" style="margin-top: 0">
+					<ul id="newsbu" class="newsbu" style="margin-top: 0">
 						<li>
 							<p><a href="#" target="_blank" title="2018农业补贴有所调整 31项补贴有你的份吗？">2018农业补贴有所调整 31项补贴有你的份吗？</a></p>
 							<i>581天前</i>
@@ -1217,10 +1218,10 @@
 					</ul>
 				</div>
 			</div>
-			<div class="newsc">
+			<div  class="newsc">
 				<h2><a href="#" target="_blank" title="农村电商发展">农村电商发展</a></h2>
 				<div class="myscroll" style="height: 270px;">
-					<ul class="newscu newsbu" style="margin-top: 0;">
+					<ul id="newsc" class="newscu newsbu" style="margin-top: 0;">
 						<li>
 							<p><a href="#" target="_blank" title="2018农业补贴有所调整 31项补贴有你的份吗？">2018农业补贴有所调整 31项补贴有你的份吗？</a></p>
 							<i>581天前</i>
@@ -1358,5 +1359,74 @@
 	</body>
 </html>
 <script type="text/javascript">
-	
+    var swiper = new Swiper('.swiper-container', {
+		autoplay:true,
+		loop:true,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  
 </script>
+<script>
+$(document).ready(function() {
+//书讯快递循环垂直向上滚动
+function movedome(){
+var margintop=0;//上边距的偏移量
+var stop=false;
+setInterval(function(){
+if(stop==true){
+return;
+}
+$("#newsbu").children("li").first().animate({"margin-top":margintop--},0,function(){
+var $li=$(this);
+if(!$li.is(":animated")){//第一个li的动画结束时
+if(-margintop>$li.height()){
+$li.css("margin-top","0px").appendTo($("#express"));
+margintop=0;
+}
+}
+});
+},50);
+//鼠标放到快递信息(ul)上时
+$("#newsbu").hover(function(){
+$(this).css("cursor","pointer");
+stop=true;//停止动画
+},function(){
+stop=false;//开始动画
+});
+}
+movedome();
+}); 
+</script>
+<script>
+	$(document).ready(function() {
+	//书讯快递循环垂直向上滚动
+	function movedome(){
+	var margintop=0;//上边距的偏移量
+	var stop=false;
+	setInterval(function(){
+	if(stop==true){
+	return;
+	}
+	$("#newsc").children("li").first().animate({"margin-top":margintop--},0,function(){
+	var $li=$(this);
+	if(!$li.is(":animated")){//第一个li的动画结束时
+	if(-margintop>$li.height()){
+	$li.css("margin-top","0px").appendTo($("#express"));
+	margintop=0;
+	}
+	}
+	});
+	},50);
+	//鼠标放到快递信息(ul)上时
+	$("#newsc").hover(function(){
+	$(this).css("cursor","pointer");
+	stop=true;//停止动画
+	},function(){
+	stop=false;//开始动画
+	});
+	}
+	movedome();
+	}); 
+	</script>

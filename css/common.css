@@ -1,0 +1,107 @@
+/*底部*/
+.footer{
+	width: 100%;
+	background: #000;
+	display: table;
+}
+.foot-com{
+	width: 1200px;
+	display: table;
+	color: #ffffff;
+	margin:0 auto;
+	padding-bottom: 20px;
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+.ft_nav{
+	width: 1200px;
+	padding-top: 13px;
+	display: table;
+	margin: 0 auto;
+}
+.ft_nav li{
+	line-height: 28px;
+	color: #ffffff;
+	font-size: 14px;
+	display: inline-block;
+	width: auto;
+}
+.ft_nav li a{
+	color: #ffffff;
+	margin-right: 8px;
+	margin-left: 8px;
+}
+.appre1{
+	width: 300px;
+	margin-top: 13px;
+	color: #666;
+	font-size: 14px;
+}
+.footer p a:hover{
+	color: #ffffff;
+}
+.appres{
+	margin-top: 2px;
+	font-size: 14px;
+	color: #ffffff;
+}
+.footer .ft-a{
+	color: #ffffff;
+}
+.apprey{
+	margin-top: 3px;
+	font-size: 14px;
+	color: #ffffff;
+}
+.ft_tools{
+	position: absolute;
+	top: 132px;
+	left: 500px;
+}
+.ft_tools li{
+	display: inline-block;
+	width: 103px;
+	height: 32px;
+}
+/*elevator*/
+.elevator{
+	width: 35px;
+	overflow: hidden;
+}
+.elevator ul{
+	overflow: hidden;
+	background-color: rgba(255,255,255,.8);
+}
+.elevator ul li{
+	width: 35px;
+	height: 42px;
+	line-height: 42px;
+	text-align: center;
+	cursor: pointer;
+	overflow: hidden;
+	border-bottom: 1px solid #e9e8ed;
+	position: relative;
+}
+.elevator ul li a{
+	font-size: 14px;
+	color: #625351;
+	display: block;
+}
+.elevator ul li a:first-child{
+	z-index: 3
+}
+.elevator ul li a:last-child{
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.elevator ul li:hover a{
+	background-color: red;
+	color: #ffffff;
+}
+.elevator ul li:hover a:last-child{
+	z-index: 5;
+	display: block;
+}
